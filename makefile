@@ -1,7 +1,9 @@
 TARGET := restapi
 BUILDDIR := bin
 
-all: swaggervalid swaggerdoc swaggergen
+all: swaggervalid swaggerdoc swaggergen build
+	
+build:
 	mkdir -p $(BUILDDIR)
 	go build -o $(BUILDDIR)/$(TARGET) internal/*
 
