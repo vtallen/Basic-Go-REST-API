@@ -31,7 +31,6 @@ swaggerdoc:
 clean:
 	rm -r -f $(BUILDDIR)
 	rm -r -f pkg/swagger/server
-	rm -f doc/*
 
 run:
 	./$(BUILDDIR)/$(TARGET)
